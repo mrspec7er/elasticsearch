@@ -1,0 +1,1303 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-12-15T13:00:07.796Z",
+  "__export_source": "insomnia.desktop.app:v8.4.5",
+  "resources": [
+    {
+      "_id": "req_377fa4ddc38344ee87988feee6807859",
+      "parentId": "fld_5121a77b02214c12b50c0269750f3a38",
+      "modified": 1702598340844,
+      "created": 1702598190082,
+      "url": "https://localhost:9200/_search",
+      "name": "Search Data From All Index",
+      "description": "",
+      "method": "POST",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702598202671,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_5121a77b02214c12b50c0269750f3a38",
+      "parentId": "wrk_45bae473e699472d8546b375aa562148",
+      "modified": 1702598157664,
+      "created": 1702598157664,
+      "name": "Search",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1702598157664,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_45bae473e699472d8546b375aa562148",
+      "parentId": null,
+      "modified": 1702514820688,
+      "created": 1702514820688,
+      "name": "Elasticsearch",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_f4300f8391714321acf2b00d253e8eb3",
+      "parentId": "fld_5121a77b02214c12b50c0269750f3a38",
+      "modified": 1702604177059,
+      "created": 1702598364532,
+      "url": "https://localhost:9200/films/_search",
+      "name": "Search Data From Index",
+      "description": "",
+      "method": "POST",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702580865603,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_27fddd6f4bed4c0ba581018d6d01f5a2",
+      "parentId": "fld_5121a77b02214c12b50c0269750f3a38",
+      "modified": 1702598517971,
+      "created": 1702598457090,
+      "url": "https://localhost:9200/movies/_search?from=0&size=10",
+      "name": "Search Data With Pagination",
+      "description": "",
+      "method": "POST",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702572197069,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_366d992ab65d465fab6eedcf0f4858bf",
+      "parentId": "fld_5121a77b02214c12b50c0269750f3a38",
+      "modified": 1702598995499,
+      "created": 1702598706464,
+      "url": "https://localhost:9200/movies/_search?sort=dateAdded:asc",
+      "name": "Search Data With Sorting",
+      "description": "",
+      "method": "POST",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702567862802,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a536bcb51aed46f9a78f42b9677cf388",
+      "parentId": "fld_9304b15c87fe4852a836cd7426ad9eb5",
+      "modified": 1702644182315,
+      "created": 1702563519016,
+      "url": "https://localhost:9200/movies/_create/cc1b6ed9-cf9e-4057-8303-34577fb54477",
+      "name": "Create Data",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"(Un)Well\",\n\t\"description\":\"This docuseries takes a deep dive into the lucrative wellness industry, which touts health and healing. But do the products live up to the promises?\",\n\t\"director\":\"\",\n\t\"genres\":\"Reality TV\",\n\t\"cast\":\"\",\n\t\"productionCountry\":\"United State\",\n\t\"releaseDate\":\"2020\",\n\t\"rating\":\"TV-MA\",\n\t\"duration\":\"1 Season\",\n\t\"imdbScore\":\"6.6/10\",\n\t\"contentType\":\"TV Show\",\n\t\"dateAdded\":\"2020-07-01\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702563528535,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_9304b15c87fe4852a836cd7426ad9eb5",
+      "parentId": "wrk_45bae473e699472d8546b375aa562148",
+      "modified": 1702563498774,
+      "created": 1702563498774,
+      "name": "CRUD",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1702563498774,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_0f1a549e0b9c4c0d8fbef8c7567d19c7",
+      "parentId": "fld_9304b15c87fe4852a836cd7426ad9eb5",
+      "modified": 1702603348573,
+      "created": 1702602795542,
+      "url": "https://localhost:9200/_bulk",
+      "name": "Bulk Insert Data",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\"create\": {\"_index\": \"movies\", \"_id\": \"cc1b6ed9-cf9e-4057-8303-34577fb54480\"}}\n{\"title\": \"(Un)Well\", \"description\":\"This docuseries takes a deep dive into the lucrative wellness industry, which touts health and healing. But do the products live up to the promises?\", \"director\":\"\", \"genres\":\"Reality TV\", \"cast\":\"\", \"productionCountry\":\"United State\", \"releaseDate\":\"2020\", \"rating\":\"TV-MA\", \"duration\":\"1 Season\", \"imdbScore\":\"6.6/10\", \"contentType\":\"TV Show\", \"dateAdded\":\"01-07-2020\"}\n{\"create\": {\"_index\": \"movies\", \"_id\": \"cc1b6ed9-cf9e-4057-8303-34577fb54481\"}}\n{\"title\": \"(Un)Well\", \"description\":\"This docuseries takes a deep dive into the lucrative wellness industry, which touts health and healing. But do the products live up to the promises?\", \"director\":\"\", \"genres\":\"Reality TV\", \"cast\":\"\", \"productionCountry\":\"United State\", \"releaseDate\":\"2020\", \"rating\":\"TV-MA\", \"duration\":\"1 Season\", \"imdbScore\":\"6.6/10\", \"contentType\":\"TV Show\", \"dateAdded\":\"01-07-2020\"}\n"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702563489994.9688,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d0bf819b28f54f10a5802ed7f5441bf2",
+      "parentId": "fld_9304b15c87fe4852a836cd7426ad9eb5",
+      "modified": 1702599158910,
+      "created": 1702599133637,
+      "url": "https://localhost:9200/movies/_doc/cc1b6ed9-cf9e-4057-8303-34577fb54477",
+      "name": "Upsert Data",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"(Un)Well\",\n\t\"description\":\"This docuseries takes a deep dive into the lucrative wellness industry, which touts health and healing. But do the products live up to the promises?\",\n\t\"director\":\"\",\n\t\"genres\":\"Reality TV\",\n\t\"cast\":\"\",\n\t\"productionCountry\":\"United State\",\n\t\"releaseDate\":\"2020\",\n\t\"rating\":\"TV-MA\",\n\t\"duration\":\"1 Season\",\n\t\"imdbScore\":\"6.6/10\",\n\t\"contentType\":\"TV Show\",\n\t\"dateAdded\":\"01-07-2020\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702563451454.9375,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1ec6c9e6604e402d9e35c5bafa9e55e9",
+      "parentId": "fld_9304b15c87fe4852a836cd7426ad9eb5",
+      "modified": 1702599647684,
+      "created": 1702599481991,
+      "url": "https://localhost:9200/movies/_update/cc1b6ed9-cf9e-4057-8303-34577fb54477",
+      "name": "Update Data",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"doc\": {\n\t\t\"cast\":\"Unknown\"\n\t}\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702563412914.9062,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4904842e8840430b92e33113e95412aa",
+      "parentId": "fld_9304b15c87fe4852a836cd7426ad9eb5",
+      "modified": 1702597692052,
+      "created": 1702597562308,
+      "url": "https://localhost:9200/genre/_create/Reality TV",
+      "name": "Create Genre Data",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"description\":\"Reality TV as known as TV Show is a genre about documentary of something happen in real life\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702563374374.875,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_cb106301c49e46439feecc401054d667",
+      "parentId": "fld_9304b15c87fe4852a836cd7426ad9eb5",
+      "modified": 1702564461017,
+      "created": 1702564377376,
+      "url": "https://localhost:9200/movies/_doc/cc1b6ed9-cf9e-4057-8303-34577fb54477",
+      "name": "Delete Data",
+      "description": "",
+      "method": "DELETE",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702563220214.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7a16093dc9104fcd8e778e725990c6bd",
+      "parentId": "fld_9304b15c87fe4852a836cd7426ad9eb5",
+      "modified": 1702596957714,
+      "created": 1702564048399,
+      "url": "https://localhost:9200/movies/_doc/cc1b6ed9-cf9e-4057-8303-34577fb54477",
+      "name": "Get Data",
+      "description": "",
+      "method": "GET",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562911894.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_72c94de140e846e5b44d2cb98b663c0b",
+      "parentId": "fld_9304b15c87fe4852a836cd7426ad9eb5",
+      "modified": 1702597049366,
+      "created": 1702596967473,
+      "url": "https://localhost:9200/movies/_source/cc1b6ed9-cf9e-4057-8303-34577fb54477",
+      "name": "Get Source Data",
+      "description": "",
+      "method": "GET",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562603574.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_8f1b347cd4914924a3707844fad19f70",
+      "parentId": "fld_9304b15c87fe4852a836cd7426ad9eb5",
+      "modified": 1702597802074,
+      "created": 1702597065937,
+      "url": "https://localhost:9200/movies/_source/cc1b6ed9-cf9e-4057-8303-34577fb54477",
+      "name": "Get Source Status",
+      "description": "",
+      "method": "HEAD",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562565034.2188,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_961c7a5a7524483eb6456d145211261a",
+      "parentId": "fld_9304b15c87fe4852a836cd7426ad9eb5",
+      "modified": 1702597787863,
+      "created": 1702597176616,
+      "url": "https://localhost:9200/movies/_mget",
+      "name": "Get Multiple Source",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"ids\": [\n\t\t\"cc1b6ed9-cf9e-4057-8303-34577fb54477\"\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562526494.1875,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e2b04d2643784565b10528abf35fddb8",
+      "parentId": "fld_9304b15c87fe4852a836cd7426ad9eb5",
+      "modified": 1702597992167,
+      "created": 1702597838883,
+      "url": "https://localhost:9200/movies/_mget",
+      "name": "Get Data From Multiple Index",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"docs\": [\n\t\t{\n\t\t\"_id\": \"cc1b6ed9-cf9e-4057-8303-34577fb54477\",\n\t\t\"_index\": \"movies\"\n\t\t},\n\t\t{\n\t\t\t\"_id\": \"Reality TV\",\n\t\t\t\"_index\": \"genre\"\n\t\t}\n\t]\n\t\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562410874.0938,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_342672d26d554886937e6810119fba29",
+      "parentId": "fld_a2d84b5584c14d6e9cd8d3a3127be40b",
+      "modified": 1702565081612,
+      "created": 1702562291362,
+      "url": "https://localhost:9200/movies/_mapping",
+      "name": "Set Date Format",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"date_detection\": true,\n\t\"dynamic_date_formats\": [\n\t\t\"dd-MM-yyyy\"\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/8.4.5" }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562295254,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_a2d84b5584c14d6e9cd8d3a3127be40b",
+      "parentId": "wrk_45bae473e699472d8546b375aa562148",
+      "modified": 1702562253993,
+      "created": 1702562253993,
+      "name": "Config",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1702562253993,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_ddbb6cb221414a989364b78321b69b8b",
+      "parentId": "fld_a2d84b5584c14d6e9cd8d3a3127be40b",
+      "modified": 1702644149522,
+      "created": 1702643805057,
+      "url": "https://localhost:9200/movies/_mapping",
+      "name": "Custom Maping",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"properties\": {\n\t\t\"title\": {\n\t\t\t\"type\": \"keyword\"\n\t\t},\n\t\t\"description\":{\n\t\t\t\"type\": \"text\"\n\t\t},\n\t\t\"director\":{\n\t\t\t\"type\": \"text\"\n\t\t},\n\t\t\"genres\":{\n\t\t\t\"type\": \"text\"\n\t\t},\n\t\t\"cast\":{\n\t\t\t\"type\": \"keyword\"\n\t\t},\n\t\t\"productionCountry\":{\n\t\t\t\"type\": \"text\"\n\t\t},\n\t\t\"releaseDate\":{\n\t\t\t\"type\": \"text\"\n\t\t},\n\t\t\"rating\":{\n\t\t\t\"type\": \"text\"\n\t\t},\n\t\t\"duration\":{\n\t\t\t\"type\": \"text\"\n\t\t},\n\t\t\"imdbScore\":{\n\t\t\t\"type\": \"text\"\n\t\t},\n\t\t\"contentType\":{\n\t\t\t\"type\": \"text\"\n\t\t},\n\t\t\"dateAdded\":{\n\t\t\t\"type\": \"date\",\n\t\t\t\"format\": \"yyyy-MM-dd\"\n\t\t}\n\t}\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/8.4.5" }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562279332.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_fdc2d59675db47fa8021427ec7ae6c89",
+      "parentId": "fld_a2d84b5584c14d6e9cd8d3a3127be40b",
+      "modified": 1702644619296,
+      "created": 1702644450166,
+      "url": "https://localhost:9200/movies/_mapping",
+      "name": "Custom Nested Maping",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"properties\": {\n\t\t\"title\": {\n\t\t\t\"type\": \"keyword\"\n\t\t},\n\t\t\"description\":{\n\t\t\t\"type\": \"text\"\n\t\t},\n\t\t\"director\":{\n\t\t\t\"type\": \"text\"\n\t\t},\n\t\t\"genres\":{\n\t\t\t\"type\": \"text\"\n\t\t},\n\t\t\"cast\":{\n\t\t\t\"type\": \"keyword\"\n\t\t},\n\t\t\"dateAdded\":{\n\t\t\t\"type\": \"date\",\n\t\t\t\"format\": \"yyyy-MM-dd\"\n\t\t},\n\t\t\"details\": {\n\t\t\t\"properties\": {\n\t\t\t\t\"productionCountry\":{\n\t\t\t\t\t\"type\": \"text\"\n\t\t\t\t},\n\t\t\t\t\"releaseDate\":{\n\t\t\t\t\t\"type\": \"text\"\n\t\t\t\t},\n\t\t\t\t\"rating\":{\n\t\t\t\t\t\"type\": \"text\"\n\t\t\t\t},\n\t\t\t\t\"duration\":{\n\t\t\t\t\t\"type\": \"text\"\n\t\t\t\t},\n\t\t\t\t\"imdbScore\":{\n\t\t\t\t\t\"type\": \"text\"\n\t\t\t\t},\n\t\t\t\t\"contentType\":{\n\t\t\t\t\t\"type\": \"text\"\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/8.4.5" }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562271371.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a0b14421e08d426288c080a78d50446c",
+      "parentId": "fld_a2d84b5584c14d6e9cd8d3a3127be40b",
+      "modified": 1702562956638,
+      "created": 1702562913181,
+      "url": "https://localhost:9200/movies/_mapping",
+      "name": "Get Date Format",
+      "description": "",
+      "method": "GET",
+      "body": { "mimeType": "application/json", "text": "" },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/8.4.5" }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562263411,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_6675449d0ce244fbb0c68a3bef376b80",
+      "parentId": "fld_1a4a820ae1c347ee9124fc94652d2851",
+      "modified": 1702643658705,
+      "created": 1702603992788,
+      "url": "https://localhost:9200/_aliases",
+      "name": "Create Aliases",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"actions\": [\n\t\t{\n\t\t\t\"add\": {\n\t\t\t\t\"index\": \"movies-v1\",\n\t\t\t\t\"alias\": \"movies\"\n\t\t\t}\n\t\t}\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562220868,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_1a4a820ae1c347ee9124fc94652d2851",
+      "parentId": "wrk_45bae473e699472d8546b375aa562148",
+      "modified": 1702562281806,
+      "created": 1702562209143,
+      "name": "Index",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1702562242780.5,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_4fba991bc5314ddf9e4e1a6953b79569",
+      "parentId": "fld_1a4a820ae1c347ee9124fc94652d2851",
+      "modified": 1702562230546,
+      "created": 1702518079277,
+      "url": "https://localhost:9200/_cat/indices?v",
+      "name": "Get Indexes",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562220768,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b268e75d6004412fa3fefec74865895c",
+      "parentId": "fld_1a4a820ae1c347ee9124fc94652d2851",
+      "modified": 1702643582822,
+      "created": 1702518519203,
+      "url": "https://localhost:9200/movies-v1",
+      "name": "Delete Index",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562220668,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e2d9ebf021ab44c5a842bcd95a0e6762",
+      "parentId": "fld_1a4a820ae1c347ee9124fc94652d2851",
+      "modified": 1702604271490,
+      "created": 1702518236833,
+      "url": "https://localhost:9200/movies-v1",
+      "name": "Create Index",
+      "description": "",
+      "method": "PUT",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562220568,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_84037d6756f045e6880b928727da6f03",
+      "parentId": "fld_1a4a820ae1c347ee9124fc94652d2851",
+      "modified": 1702605267019,
+      "created": 1702605173466,
+      "url": "https://localhost:9200/_reindex",
+      "name": "Reindex",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"source\": {\n\t\t\"index\": \"movies\"\n\t},\n\t\"dest\": {\n\t\t\"index\": \"movies-v1\"\n\t}\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702529452895.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e1dea8cefa4e4e0e8cba96ce20cf63ec",
+      "parentId": "fld_1a4a820ae1c347ee9124fc94652d2851",
+      "modified": 1702597514165,
+      "created": 1702597377318,
+      "url": "https://localhost:9200/genre",
+      "name": "Create Genre Index",
+      "description": "",
+      "method": "PUT",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702496685222.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f85c94e2edee48de91e1c5d77388c889",
+      "parentId": "wrk_45bae473e699472d8546b375aa562148",
+      "modified": 1702562278517,
+      "created": 1702514824769,
+      "url": "https://localhost:9200",
+      "name": "Get Status",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5",
+          "id": "pair_1d77c2ed94d445409698073dcfa09e3a"
+        },
+        {
+          "id": "pair_9f864a99af924029b4005190f32406b7",
+          "name": "",
+          "value": "",
+          "description": ""
+        },
+        {
+          "id": "pair_4855f872a3d04038b0f128ec2a4e304a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "elastic",
+        "password": "bDKdf=pMCpRR+-ZYfPnu"
+      },
+      "metaSortKey": -1702562231568,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_0a079afa29198f6da01e837261f441f8a5102303",
+      "parentId": "wrk_45bae473e699472d8546b375aa562148",
+      "modified": 1702514820691,
+      "created": 1702514820691,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1702514820691,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_0a079afa29198f6da01e837261f441f8a5102303",
+      "parentId": "wrk_45bae473e699472d8546b375aa562148",
+      "modified": 1702514820692,
+      "created": 1702514820692,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
